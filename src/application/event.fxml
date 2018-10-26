@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?> <!-- 자바스크립트를 쓰겠다 -->
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane 
+xmlns:fx="http://javafx.com/fxml/1" 
+xmlns="http://javafx.com/javafx/8"
+fx:controller="application.EventMain"
+>
+	<!-- <fx:script>
+		function btnClk(){
+			var str = tf1.getText();
+			label1.setText('입력글자:'+str);
+			tf1.setText('');
+			tf1.requestFocus();
+		}
+	</fx:script> -->
+   <top>
+      <Label fx:id='label1' prefHeight="26.0" prefWidth="242.0" text="Label" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+   							<!--onAction 엔터키  -->
+      <TextField fx:id='tf1' prefHeight="23.0" prefWidth="164.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom><!--onAction 버튼클릭  -->
+      <!-- <Button onAction="#btnClk" text="Button" BorderPane.alignment="CENTER" /> -->
+      <Button fx:id='btn' text="Button" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

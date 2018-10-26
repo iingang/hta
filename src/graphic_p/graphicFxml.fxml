@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphic_p.GraphicFxmlMain">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fx:id="rec" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="143.0" layoutY="87.0" rotate="-45.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+            <Circle fx:id="cir" fill="#1fffe6" layoutX="535.0" layoutY="579.0" radius="85.0" stroke="#6135e8" strokeType="INSIDE" strokeWidth="3.0" />
+            <Ellipse fill="#ff8eff" layoutX="709.0" layoutY="170.0" radiusX="140.0" radiusY="95.0" rotate="50.0" stroke="#72295f" strokeType="INSIDE" strokeWidth="5.0" />
+            <Arc fx:id="pack" fill="#e4ff6d" layoutX="177.0" layoutY="325.0" length="270.0" radiusX="97.0" radiusY="98.0" rotate="-4.1" startAngle="39.8" stroke="#59dd29" strokeType="INSIDE" strokeWidth="6.0" type="ROUND" />
+            <CubicCurve controlX1="-90.0" controlX2="20.0" controlY1="-300.0" controlY2="400.0" endX="150.0" fill="#ff5533" layoutX="228.0" layoutY="523.0" rotate="142.5" startX="-150.0" stroke="BLACK" />
+            <Text fill="#433ae8" layoutX="305.0" layoutY="153.0" rotate="-164.3" stroke="#f5f10f" strokeType="OUTSIDE" strokeWidth="4.0" text="안녕!">
+               <font>
+                  <Font size="80.0" />
+               </font>
+            </Text>
+            <Line fx:id="line" endX="300.0" endY="200.0" layoutX="471.0" layoutY="447.0" startX="150.0" strokeWidth="6.0">
+               <stroke>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#3d0dda" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <Button fx:id="btnRec" layoutX="67.0" layoutY="45.0" mnemonicParsing="false" text="사각형회전" />
+            <Button fx:id="btnMouth" layoutX="239.0" layoutY="170.0" mnemonicParsing="false" text="입다물기" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

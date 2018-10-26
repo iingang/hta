@@ -1,0 +1,26 @@
+#wrapper{
+	-fx-background-color: #ffff00; 
+}
+#hbox1{
+	-fx-background-color: #00ff00; 
+	-fx-border-color: #0000ff; 
+	-fx-border-insets: 5; 
+	-fx-border-radius: 30;
+}
+
+#hbox2{
+	-fx-background-color: linear-gradient(to right,#000000,#ffffff);
+}
+
+
+#hbox3{
+	-fx-background-image: url('file:ppp/img.jpg');
+}
+
+#btn2{
+	-fx-background-color: #ff0000;
+}
+
+#btn3{
+	 -fx-background-color: #ff0000; -fx-text-fill: #ffffff;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <?import javafx.scene.control.*?> -->
+<!-- <?import java.lang.*?> -->
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- 이건 껍데기라 값을 넣어 코딩하는 방식은 안좋은 방식! -->
+
+<VBox prefHeight="700" prefWidth="800" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlMain">
+<!-- fx가 붙으면 외부에서 알수있게 해줌. ""이런식으로 값들어가면 멤버변수에 들어가는 값 -->
+   <children>										<!-- 체크박스 선택되어있게 -->
+      <CheckBox fx:id="checkBox" mnemonicParsing="false" selected="true" text="abcd" />
+      <RadioButton fx:id="genM" mnemonicParsing="false" text="남자">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" /><!-- new ToggleGroup 했다고 생각해 -->
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="genF" mnemonicParsing="false" selected="true" text="여자" toggleGroup="$gender" />
+      <ComboBox fx:id="email" prefWidth="150.0">
+      	<!-- <items> 이런것들 다 멤버변수
+      		<FXCollections fx:factory="observableArrayList">
+      			<String fx:value="google.com"/>
+      			<String fx:value="naver.com"/>
+      			<String fx:value="daum.net"/>
+      			<String fx:value="zum.com"/>
+      		</FXCollections>
+      	</items>	
+      	<value> 콤보박스의 초기값
+      		<String fx:value="daum.net"/>
+      	</value> -->
+      </ComboBox>
+      <Slider fx:id="zoom" max="255.0" value="100.0" />
+   </children>
+</VBox>
